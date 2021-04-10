@@ -1,0 +1,27 @@
+<html lang='ru'>
+  <head>
+    <meta charset="utf-8">
+    <title>Выход из аккаунта...</title>
+    <link rel="manifest" href="pwa.webmanifest">
+  </head>
+  <body>
+    <script>
+
+function storageAvailable(type) {
+	try {
+		var storage = window[type], x = '__storage_test__';
+		storage.setItem(x, x);
+		storage.removeItem(x);
+		return true;
+	}
+	catch(e) { return false; }
+}
+
+if (storageAvailable('localStorage')) { // если localStorage работает в этом браузере
+	localStorage.removeItem('userName');
+}
+document.location.href = localStorage.getItem('lastPage');
+
+	</script>
+  </body>
+</html>
