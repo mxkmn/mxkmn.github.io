@@ -373,26 +373,25 @@ width="280mm" height="200mm" viewBox="0 0 280 200" version="1.1" id="svg5"
 
 
 <body>
-  <animateMotion xlink:href=”#coolsvg”></animateMotion>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js'></script>
 
   <script>
     const s = document.getElementById('coolsvg');
     const scaleModifier = s.viewBox.animVal.width / s.getBoundingClientRect().width; // коэффициент размера объектов в браузере
-    var movingObjects = [];
+    var movingObjects = []; // контейнер данных для объектов
 
     init = function () {
       movingObjects.push({ object: cloud, path: pathcloud }); // облако
       for (let i = 1; i <= 6; i++) { // вагонетки
         const cab = document.getElementById('cabin' + (i));
         const pat = document.getElementById('path' + Math.floor((i + 2) / 3));
-        if (cab && pat)
+        if (cab && pat) // если объект и путь существует
           movingObjects.push({ object: cab, path: pat });
       }
 
       for (let index = 0; index < movingObjects.length; index++) {
         movingObjects[index].object.setAttribute('transform', 'translate(-100, -100)'); // смещаем чтоб не было видно
-        addMovement(movingObjects[index], index, (index == 0 ? 20 : 5));
+        addMovement(movingObjects[index], index, (index == 0 ? 20 : 5)); // задержка 20 секунд для облака, 5 секунд для вагонеток
       }
     };
     addMovement = function (movingObject, delay, speed) {
