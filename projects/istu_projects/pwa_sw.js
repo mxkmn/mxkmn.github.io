@@ -3,7 +3,7 @@ self.addEventListener('install', (e) => {
     caches.open('istu-store').then((cache) => cache.addAll([
       'logo.png',
       'style.css',
-      'master.html',
+      'index.html',
       'default.js',
 
       'projects.html', 'projects.js',

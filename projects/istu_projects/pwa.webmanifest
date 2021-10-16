@@ -9,7 +9,7 @@
 		"type": "image/png"
 	  }
 	],
-	"start_url": "master.html",
+	"start_url": "index.html",
 	"display": "fullscreen",
 	"background_color": "white"
 }
