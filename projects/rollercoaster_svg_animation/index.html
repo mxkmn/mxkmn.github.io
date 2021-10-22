@@ -2,6 +2,7 @@
 
 <!-- Created by mxkmn 2021.10.13 -->
 <!-- Updated 2021.10.20: added SMIL -->
+<!-- Updated 2021.10.22: fixed SMIL and rotation on circular rollercoasters -->
 
 <html lang="en">
 
@@ -12,7 +13,7 @@
 
 <body>
   <div class="svg-container" style="text-align:center;">
-    <svg id="coolsvg" width="280mm" height="200mm" viewBox="0 0 280 200" version="1.1" id="svg5"
+    <svg width="280mm" height="200mm" viewBox="0 0 280 200" version="1.1" id="svg5"
       inkscape:version="1.1 (c68e22c387, 2021-05-23)" sodipodi:docname="full.svg"
       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -373,7 +374,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js'></script>
 
   <script>
-    const s = document.getElementById('coolsvg');
+    const s = document.getElementById('svg5');
     const scaleModifier = s.viewBox.animVal.width / s.getBoundingClientRect().width; // коэффициент размера объектов в браузере
     var movingObjects = []; // контейнер данных для объектов
 
@@ -394,7 +395,7 @@
       movingObject.length = 0; // начало слева
 
       movingObject.tween = new TWEEN.Tween(movingObject) // создаём новое движение
-        .to({ length: movingObject.path.getTotalLength() }, // едет направо по movingObject.path
+        .to({ length: movingObject.path.getTotalLength() }, // едет слева направо по movingObject.path
           speed * 1000) // анимация длится speed секунд 
         .repeat(Infinity) // бесконечное повторение
         .delay(delay * 1000) // задержка при первом запуске
@@ -404,8 +405,8 @@
           const point = movingObject.path.getPointAtLength(movingObject.length); // точка носа
           const prevPoint = movingObject.path.getPointAtLength(movingObject.length - cabinW * 0.9); // примерно точка заднего колеса
 
-          const angle = Math.atan((point.y - prevPoint.y) / (point.x - prevPoint.x)) * (180 / Math.PI); // угол в градусах
-          const attr = "translate(" + point.x + ", " + point.y + ") rotate(" + ((angle || 0) + 180) + ", " + 0 + ", " + 0 + ")";
+          const angle = Math.atan2(point.y-prevPoint.y, point.x-prevPoint.x) * (180 / Math.PI); // угол в градусах
+          const attr = "translate(" + point.x + ", " + point.y + ") rotate(" + ((angle || 0) + 180) + ")";
           movingObject.object.setAttribute('transform', attr); // применение поправок
         }).start();
     };
