@@ -28,7 +28,7 @@ function getNewQr() {
 	let xhr = new XMLHttpRequest();
 	xhr.open('POST', url, true);
 	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:8075');
+	xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://mxkmn.github.io');
 	xhr.setRequestHeader('Authorization', user.getToken())
 
 	xhr.onreadystatechange = function () {
