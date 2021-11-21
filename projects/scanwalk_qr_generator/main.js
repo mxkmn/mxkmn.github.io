@@ -8,7 +8,7 @@ else {
 	getNewQr();
 }
 function randomize() {
-	const id = Math.floor(Math.random() * (999999 - 100000) + 100000);
+	const id = Math.floor(Math.random()*5 + 100000); // Math.floor(Math.random() * (999999 - 100000) + 100000)
 	const token = 'Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudWxsbnVtYmVyMSIsInJvbGVzIjpbXSwiaWF0IjoxNjM3MDgxMjk1LCJleHAiOjE2Njg2MzgyNDd9.IOZyTXwVghPv8se0WFhAgROpLuMYHZINtKVqIwE-auc';
 	user.setData(id, token);
 	getNewQr();
