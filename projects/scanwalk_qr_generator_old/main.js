@@ -1,3 +1,5 @@
+const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
+
 const user = new User();
 if (!user.isAccessible()) {
 	document.getElementById('login_container').classList.add("active");
@@ -6,7 +8,7 @@ else {
 	getNewQr();
 }
 function randomize() {
-	const id = Math.floor(Math.random()*5 + 100000); // Math.floor(Math.random() * (999999 - 100000) + 100000)
+	const id = Math.floor(Math.random() * (999999 - 100000) + 100000);
 	const token = 'Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJudWxsbnVtYmVyMSIsInJvbGVzIjpbXSwiaWF0IjoxNjM3MDgxMjk1LCJleHAiOjE2Njg2MzgyNDd9.IOZyTXwVghPv8se0WFhAgROpLuMYHZINtKVqIwE-auc';
 	user.setData(id, token);
 	getNewQr();
@@ -24,7 +26,7 @@ function getNewQr() {
 	const successDiv = document.getElementById('success');
 
 	let xhr = new XMLHttpRequest();
-	xhr.open('POST', "https://scanwalk.herokuapp.com/api/v1/qrecords/generate", true);
+	xhr.open('POST', url, true);
 	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://mxkmn.github.io');
 	xhr.setRequestHeader('Authorization', user.getToken())
