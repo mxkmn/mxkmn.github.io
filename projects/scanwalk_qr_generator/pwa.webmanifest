@@ -1,7 +1,7 @@
 {
-	"name": "Пропускная система Scanwalk",
+	"name": "Scanwalk",
 	"short_name": "Scanwalk",
-	"description": "Приложение-компаньон пропускной системы Scanwalk",
+	"description": "Пропускная система Scanwalk",
 	"icons": [
 	  {
 		"src": "logo.png",
@@ -10,6 +10,6 @@
 	  }
 	],
 	"start_url": "generator.html",
-	"display": "standalone",
+	"display": "minimal-ui",
 	"background_color": "white"
 }
