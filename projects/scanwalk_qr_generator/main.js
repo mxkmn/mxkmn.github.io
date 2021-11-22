@@ -10,7 +10,7 @@ document.querySelector('.user-close').addEventListener("click", function (e) { /
 
 if (!user.isAccessible()) {
 	alert("Необходимо войти ещё раз...");
-	window.location.replace(index.html);
+	window.location.replace("index.html");
 }
 else {
 	communication.getNewQr();
