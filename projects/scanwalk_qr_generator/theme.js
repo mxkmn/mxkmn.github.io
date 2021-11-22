@@ -32,3 +32,5 @@ class Theme {
 		}
 	}
 }
+
+const theme = new Theme();

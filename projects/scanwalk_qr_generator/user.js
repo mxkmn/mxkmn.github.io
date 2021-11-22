@@ -1,11 +1,8 @@
 class User {
-	#id = "";
 	#token = "";
 	constructor() {
-		if (this.#storageAvailable() && localStorage.getItem('userId') && localStorage.getItem('userToken')) {
-			this.#id = localStorage.getItem('userId'); // устанавливаем id пользователя
-			this.#token = localStorage.getItem('userToken'); // устанавливаем token пользователя (пользователя?)
-			this.#setUserLabels();
+		if (this.#storageAvailable() && localStorage.getItem('userToken')) {
+			this.#token = localStorage.getItem('userToken');
 		}
 	}
 	#storageAvailable() {
@@ -17,25 +14,16 @@ class User {
 		}
 		catch (e) { return false; } // localStorage не работает в этом браузере
 	}
-	#setUserLabels() {
-		document.getElementById('userLabel').textContent = "Вы вошли как " + this.#id;
-	}
 	isAccessible() {
-		return (this.#id != "" && this.#token != "");
-	}
-	getId() {
-		return this.#id;
+		return (this.#token != "");
 	}
 	getToken() {
 		return this.#token;
 	}
-	setData(id, token) {
-		this.#id = id;
+	setToken(token) {
 		this.#token = token;
-		this.#setUserLabels();
 
 		if (this.#storageAvailable()) {
-			localStorage.setItem('userId', id);
 			localStorage.setItem('userToken', token);
 		}
 	}
@@ -45,3 +33,5 @@ class User {
 		document.getElementById('login_container').classList.add("active");
 	}
 }
+
+const user = new User();

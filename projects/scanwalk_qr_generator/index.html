@@ -4,21 +4,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Получение данных...</title>
-	<script src="user.js" defer></script>
 </head>
 
 <script>
 	let xhr = new XMLHttpRequest();
 	xhr.open('POST', "https://scanwalk.herokuapp.com/api/v1/auth/token", true);
 	xhr.setRequestHeader('Content-Type', 'application/json');
-	// xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-	// xhr.setRequestHeader('Access-Control-Allow-Headers', 'Origin, Content-Type, X-Auth-Token');
+	xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 
 	xhr.onreadystatechange = function () {
-		console.log(xhr.responseText);
+		localStorage.setItem('userToken', xhr.responseText);
+		window.location.replace = "generator.html";
 	}
 
-	xhr.send('{"id": ' + 100000 + '}');
+	xhr.send('{"id": ' + Math.floor(Math.random()*5 + 100000) + '}'); // Math.floor(Math.random() * (999999 - 100000) + 100000)
 </script>
 
 </html>
