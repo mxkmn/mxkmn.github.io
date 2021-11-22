@@ -9,8 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:regular,700" rel="stylesheet" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="pwa.webmanifest">
 	<script src="user.js" defer></script>
 	<script src="theme.js" defer></script>
+	<script src="communication.js" defer></script>
 	<script src="main.js" defer></script>
 </head>
 
@@ -28,7 +30,7 @@
 			</div>
 			<div id="error" class="alert error" role="alert">QR-код уже сгенерирован</div>
 			<div class="button-container">
-				<button type="button" class="generate-button button" id="generate" onclick="getNewQr()">Обновить пропуск</button>
+				<button type="button" class="generate-button button" id="generate" onclick="communication.getNewQr()">Обновить пропуск</button>
 			</div>
 		</div>
 		
@@ -59,22 +61,9 @@
 				<div class="form-item">
 					<button id="change_theme" class="form-button button" onclick="theme.changeTheme();">Сменить тему</button>
 				</div>
-				<div class="form-item">
-					<button id="deauth" class="form-button button" onclick="user.deauth();">Выйти</button>
-				</div>
 			</div>
 		</div>
 	</div>
 </body>
-
-<script>
-	const form = document.querySelector('.form-container');
-	document.querySelector('.user-active').addEventListener("click", function (e) { // кнопка "пользователь"
-		document.getElementById('user_container').classList.add("active");
-	});
-	document.querySelector('.user-close').addEventListener("click", function (e) { // крестик в форме пользователя
-		document.getElementById('user_container').classList.remove("active");
-	});
-</script>
 
 </html>

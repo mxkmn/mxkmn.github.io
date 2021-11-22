@@ -14,7 +14,7 @@
 
 	xhr.onreadystatechange = function () {
 		localStorage.setItem('userToken', xhr.responseText);
-		window.location.replace = "generator.html";
+		window.location.replace("generator.html");
 	}
 
 	xhr.send('{"id": ' + Math.floor(Math.random()*5 + 100000) + '}'); // Math.floor(Math.random() * (999999 - 100000) + 100000)
