@@ -1,15 +1,25 @@
 {
-	"name": "Scanwalk",
+	"name": "Пропускная система Scanwalk",
 	"short_name": "Scanwalk",
-	"description": "Пропускная система Scanwalk",
+	"description": "Приложение-компаньон для пропускной системы Scanwalk. Взаимодействует с сервером для получения пропуска - необходимо подключение к интернету.",
 	"icons": [
-	  {
-		"src": "logo.png",
-		"sizes": "256x256",
-		"type": "image/png"
-	  }
+		{
+			"src": "icons/logo144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/logo192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/logo512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
 	],
 	"start_url": "generator.html",
-	"display": "minimal-ui",
-	"background_color": "white"
+	"display": "standalone",
+	"background_color": "#252C6E"
 }
