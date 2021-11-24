@@ -1,5 +1,4 @@
-class Communication {
-	#url = 'https://scanwalk.herokuapp.com/api/v1/qrecords/generate';
+class Communications {
     async #postData(url = '', data = {}) {
         // Default options are marked with *
         const response = await fetch(url, {
@@ -17,7 +16,11 @@ class Communication {
         });
         return await response.json(); // parses JSON response into native JavaScript objects
     }
-	getNewQr(token = user.getToken(), logging = false) {
+	getQr() {
+        const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
+        
+        const logging = false; // вывод скорости
+
         const successDiv = document.getElementById('success');
         const sendDate = (new Date()).getTime();
     
@@ -25,7 +28,7 @@ class Communication {
             successDiv.setAttribute("style", "display: none");
         }
     
-        this.#postData(this.#url, { token: token })
+        this.#postData(url, { token: user.getUserToken() })
             .then((data) => {
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
         
@@ -36,6 +39,16 @@ class Communication {
             }
         );
     }
+    getTokens() {
+        const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
+
+        this.#postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
+            .then((data) => {
+                user.setTokens(data["token"], data["tgtoken"]);
+                window.location.replace("generator.html");
+            }
+        );
+    }
 }
 
-const communication = new Communication();
+const communications = new Communications();

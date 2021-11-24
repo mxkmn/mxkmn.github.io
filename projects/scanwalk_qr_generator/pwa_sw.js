@@ -7,7 +7,7 @@ self.addEventListener('install', (e) => {
       'generator.html',
 
       'main.js',
-      'communication.js',
+      'communications.js',
       'theme.js',
       'user.js'
     ])),

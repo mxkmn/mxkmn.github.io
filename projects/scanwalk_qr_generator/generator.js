@@ -13,7 +13,7 @@ if (!user.isAccessible()) {
 	window.location.replace("index.html");
 }
 else {
-	communication.getNewQr();
+	communications.getQr();
 }
 // document.getElementById('login_container').classList.remove("active");
 
@@ -23,14 +23,19 @@ function tgLogin() {
 
 
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker
-	.register('pwa_sw.js')
-	.then(() => { console.log('Service Worker Registered'); });
+	try {
+		navigator.serviceWorker
+			.register('pwa_sw.js')
+			.then(() => { console.log('Service Worker Registered'); });
+	}
+	catch (e) {
+		console.log("Не удалось активировать возможности PWA. Это возможно только через HTTPS.");
+	}
 }
 
 const isIos = () => {
 	const userAgent = window.navigator.userAgent.toLowerCase();
-	return /iphone|ipad|ipod/.test( userAgent );
+	return /iphone|ipad|ipod/.test(userAgent);
 }
 // Detects if device is in standalone mode
 const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
