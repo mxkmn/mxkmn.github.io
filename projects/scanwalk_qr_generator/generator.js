@@ -23,14 +23,9 @@ function tgLogin() {
 
 
 if ('serviceWorker' in navigator) {
-	try {
-		navigator.serviceWorker
-			.register('pwa_sw.js')
-			.then(() => { console.log('Service Worker Registered'); });
-	}
-	catch (e) {
-		console.log("Не удалось активировать возможности PWA. Это возможно только через HTTPS.");
-	}
+	navigator.serviceWorker
+		.register('pwa_sw.js')
+		.then(() => { console.log('Service Worker Registered'); });
 }
 
 const isIos = () => {
