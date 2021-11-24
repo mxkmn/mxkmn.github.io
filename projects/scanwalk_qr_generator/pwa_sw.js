@@ -1,6 +1,8 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('scanwalk-store').then((cache) => cache.addAll([
+      'https://fonts.googleapis.com/css?family=Poppins:regular,700',
+
       'icons/maskable_icon_x72.png',
       'style.css',
 
