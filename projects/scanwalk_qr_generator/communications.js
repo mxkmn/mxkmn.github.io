@@ -42,8 +42,10 @@ class Communications {
     getTokens() {
         const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
 
+        testLabel2.textContent = 'Получение токена';
         this.#postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
+                testLabel2.textContent = 'Токен получен';
                 user.setTokens(data["token"], data["tgtoken"]);
                 window.location.replace("generator.html");
             }
