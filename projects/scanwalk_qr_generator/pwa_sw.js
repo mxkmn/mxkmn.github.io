@@ -4,9 +4,6 @@ self.addEventListener('install', (e) => {
       'icons/maskable_icon_x72.png',
       'style.css',
 
-      'index.html',
-      'index.js',
-
       'generator.html',
       'generator.js',
 
