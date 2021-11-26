@@ -53,4 +53,5 @@ class Communications {
     }
 }
 
+testLabel2.textContent = 'Чё ваще происходит?';
 const communications = new Communications();
