@@ -30,15 +30,15 @@ localStorage.clear();
 
 testLabel1.textContent = 'Скрипт 1 работает';
 class User {
-	#userToken = "";
-	#tgToken = "";
+	userToken = "";  // private
+	tgToken = "";  // private
 	constructor() {
-		if (this.#storageAvailable() && localStorage.getItem('userToken') && localStorage.getItem('tgToken')) {
-			this.#userToken = localStorage.getItem('userToken');
-			this.#tgToken = localStorage.getItem('tgToken');
+		if (this.storageAvailable() && localStorage.getItem('userToken') && localStorage.getItem('tgToken')) {
+			this.userToken = localStorage.getItem('userToken');
+			this.tgToken = localStorage.getItem('tgToken');
 		}
 	}
-	#storageAvailable() {
+	storageAvailable() { // private
 		try {
 			const storage = window['localStorage'], x = '__storage_test__';
 			storage.setItem(x, x);
@@ -48,19 +48,19 @@ class User {
 		catch (e) { return false; } // localStorage не работает в этом браузере
 	}
 	isAccessible() {
-		return ((this.#userToken != "") && (this.#tgToken != ""));
+		return ((this.userToken != "") && (this.tgToken != ""));
 	}
 	getUserToken() {
-		return this.#userToken;
+		return this.userToken;
 	}
 	getTgToken() {
-		return this.#tgToken;
+		return this.tgToken;
 	}
 	setTokens(user, tg) {
-		this.#userToken = user;
-		this.#tgToken = tg;
+		this.userToken = user;
+		this.tgToken = tg;
 
-		if (this.#storageAvailable()) {
+		if (this.storageAvailable()) {
 			localStorage.setItem('userToken', user);
 			localStorage.setItem('tgToken', tg);
 		}
@@ -80,7 +80,7 @@ testLabel1.textContent = 'Скрипт 1 закончен';
 
 testLabel2.textContent = 'Скрипт 2 работает';
 class Communications {
-    async #postData(url = '', data = {}) {
+    async postData(url = '', data = {}) {  // private
         // Default options are marked with *
         const response = await fetch(url, {
           method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -109,7 +109,7 @@ class Communications {
             successDiv.setAttribute("style", "display: none");
         }
     
-        this.#postData(url, { token: user.getUserToken() })
+        this.postData(url, { token: user.getUserToken() })
             .then((data) => {
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
         
@@ -124,7 +124,7 @@ class Communications {
         const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
 
         testLabel2.textContent = 'Получение токена';
-        this.#postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
+        this.postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
                 testLabel2.textContent = 'Токен получен';
                 user.setTokens(data["token"], data["tgtoken"]);
