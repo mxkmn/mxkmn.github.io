@@ -1,3 +1,4 @@
+testLabel1.textContent = 'Скрипт 1 работает';
 class User {
 	#userToken = "";
 	#tgToken = "";
@@ -41,4 +42,6 @@ class User {
 	}
 }
 
+testLabel1.textContent = 'Чё ваще происходит?';
 const user = new User();
+testLabel1.textContent = 'Скрипт 1 закончен';
