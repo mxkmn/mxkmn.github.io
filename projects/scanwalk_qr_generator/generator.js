@@ -28,6 +28,7 @@ if ('serviceWorker' in navigator) {
 		.then(() => { console.log('Service Worker Registered'); });
 }
 
+// хрень для иос
 const isIos = () => {
 	const userAgent = window.navigator.userAgent.toLowerCase();
 	return /iphone|ipad|ipod/.test(userAgent);
