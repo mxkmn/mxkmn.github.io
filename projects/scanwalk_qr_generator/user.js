@@ -1,14 +1,13 @@
-testLabel1.textContent = 'Скрипт 1 работает';
 class User {
-	#userToken = "";
-	#tgToken = "";
+	p_userToken = "";
+	p_tgToken = "";
 	constructor() {
-		if (this.#storageAvailable() && localStorage.getItem('userToken') && localStorage.getItem('tgToken')) {
-			this.#userToken = localStorage.getItem('userToken');
-			this.#tgToken = localStorage.getItem('tgToken');
+		if (this.p_storageAvailable() && localStorage.getItem('userToken') && localStorage.getItem('tgToken')) {
+			this.p_userToken = localStorage.getItem('userToken');
+			this.p_tgToken = localStorage.getItem('tgToken');
 		}
 	}
-	#storageAvailable() {
+	p_storageAvailable() {
 		try {
 			const storage = window['localStorage'], x = '__storage_test__';
 			storage.setItem(x, x);
@@ -18,19 +17,19 @@ class User {
 		catch (e) { return false; } // localStorage не работает в этом браузере
 	}
 	isAccessible() {
-		return ((this.#userToken != "") && (this.#tgToken != ""));
+		return ((this.p_userToken != "") && (this.p_tgToken != ""));
 	}
 	getUserToken() {
-		return this.#userToken;
+		return this.p_userToken;
 	}
 	getTgToken() {
-		return this.#tgToken;
+		return this.p_tgToken;
 	}
 	setTokens(user, tg) {
-		this.#userToken = user;
-		this.#tgToken = tg;
+		this.p_userToken = user;
+		this.p_tgToken = tg;
 
-		if (this.#storageAvailable()) {
+		if (this.p_storageAvailable()) {
 			localStorage.setItem('userToken', user);
 			localStorage.setItem('tgToken', tg);
 		}
@@ -42,6 +41,4 @@ class User {
 	}
 }
 
-testLabel1.textContent = 'Чё ваще происходит?';
 const user = new User();
-testLabel1.textContent = 'Скрипт 1 закончен';

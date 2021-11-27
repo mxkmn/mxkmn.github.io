@@ -1,6 +1,5 @@
-testLabel2.textContent = 'Скрипт 2 работает';
 class Communications {
-    async #postData(url = '', data = {}) {
+    async p_postData(url = '', data = {}) {
         // Default options are marked with *
         const response = await fetch(url, {
           method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -29,7 +28,7 @@ class Communications {
             successDiv.setAttribute("style", "display: none");
         }
     
-        this.#postData(url, { token: user.getUserToken() })
+        this.p_postData(url, { token: user.getUserToken() })
             .then((data) => {
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
         
@@ -43,12 +42,8 @@ class Communications {
     getTokens() {
         const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
 
-        testLabel2.textContent = 'Получение токена';
-        this.#postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
+        this.p_postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
-                console.log(data);
-                alert(data);
-                testLabel2.textContent = 'Токен получен';
                 user.setTokens(data["token"], data["tgtoken"]);
                 window.location.replace("generator.html");
             }
@@ -56,6 +51,4 @@ class Communications {
     }
 }
 
-testLabel2.textContent = 'Чё ваще происходит?';
 const communications = new Communications();
-testLabel2.textContent = 'Скрипт 3 закончен';
