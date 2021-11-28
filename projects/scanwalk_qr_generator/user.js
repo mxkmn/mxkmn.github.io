@@ -1,10 +1,10 @@
 class User {
-	p_userToken = "";
-	p_tgToken = "";
+	p_token = "";
+	p_tgKey = "";
 	constructor() {
-		if (this.p_storageAvailable() && localStorage.getItem('userToken') && localStorage.getItem('tgToken')) {
-			this.p_userToken = localStorage.getItem('userToken');
-			this.p_tgToken = localStorage.getItem('tgToken');
+		if (this.p_storageAvailable() && localStorage.getItem('token') && localStorage.getItem('tgKey')) {
+			this.p_token = localStorage.getItem('token');
+			this.p_tgKey = localStorage.getItem('tgKey');
 		}
 	}
 	p_storageAvailable() {
@@ -17,25 +17,25 @@ class User {
 		catch (e) { return false; } // localStorage не работает в этом браузере
 	}
 	isAccessible() {
-		return ((this.p_userToken != "") && (this.p_tgToken != ""));
+		return ((this.p_token != "") && (this.p_tgKey != ""));
 	}
-	getUserToken() {
-		return this.p_userToken;
+	getToken() {
+		return this.p_token;
 	}
-	getTgToken() {
-		return this.p_tgToken;
+	getTgKey() {
+		return this.p_tgKey;
 	}
-	setTokens(user, tg) {
-		this.p_userToken = user;
-		this.p_tgToken = tg;
+	setData(user, tg) {
+		this.p_token = user;
+		this.p_tgKey = tg;
 
 		if (this.p_storageAvailable()) {
-			localStorage.setItem('userToken', user);
-			localStorage.setItem('tgToken', tg);
+			localStorage.setItem('token', user);
+			localStorage.setItem('tgKey', tg);
 		}
 	}
 	deauth() {
-		this.setTokens("", "");
+		this.setData("", "");
 		document.getElementById('user_container').classList.remove("active");
 		document.getElementById('login_container').classList.add("active");
 	}

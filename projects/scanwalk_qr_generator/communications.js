@@ -28,7 +28,7 @@ class Communications {
             successDiv.setAttribute("style", "display: none");
         }
     
-        this.p_postData(url, { token: user.getUserToken() })
+        this.p_postData(url, { token: user.getToken() })
             .then((data) => {
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
         
@@ -44,7 +44,7 @@ class Communications {
 
         this.p_postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
-                user.setTokens(data["token"], data["tgtoken"]);
+                user.setData(data["token"], data["tgtoken"]);
                 window.location.replace("generator.html");
             }
         );

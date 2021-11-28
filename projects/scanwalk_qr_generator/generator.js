@@ -18,7 +18,7 @@ else {
 // document.getElementById('login_container').classList.remove("active");
 
 function tgLogin() {
-	alert("На данный момент бот недоступен");
+	window.open('https://t.me/HSEPassBot?start=' + user.getTgKey(), '_blank');
 }
 
 
