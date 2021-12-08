@@ -34,6 +34,9 @@ class User {
 			localStorage.setItem('tgKey', tg);
 		}
 	}
+	tgLogin() {
+		window.open('https://t.me/HSEPassBot?start=' + this.p_tgKey + '_blank');
+	}
 	deauth() {
 		this.setData("", "");
 		document.getElementById('user_container').classList.remove("active");
