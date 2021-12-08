@@ -5,31 +5,31 @@ html {
 	font-weight: 400;
 }
 
-.logo {
+.logo-container {
 	width: 70%;
 }
 
-.qr-container, .logo, .button-container {
+.qr-container, .logo-container, .button-container {
 	max-width: 512px;
 	margin: 25px auto;
 	text-align: center;
 }
 
-.qr_image {
+#qr_image {
 	width: 100%;
-}
-
-.black {
-	filter: invert(100%);
-	background: #000;
-}
-.black .logo {
-	filter: invert(100%);
-	color: white;
 }
 
 .button-container img {
 	width: 30%;
 	max-width: 50px;
 	margin: 10px 30px;
+}
+
+.black {
+	filter: invert(100%);
+	background: #000;
+}
+.black .logo-container {
+	filter: invert(100%);
+	color: white;
 }
