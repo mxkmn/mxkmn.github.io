@@ -17,6 +17,14 @@ else {
 }
 // document.getElementById('login_container').classList.remove("active");
 
+function update() {
+	communications.getQr();
+}
+function activate(el) {
+	['qr_image', 'waiting', 'timeout', 'connection_error'].forEach(element => {
+		document.getElementById(element).style.display = (el == element) ? "block" : "none";
+	});
+}
 
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker

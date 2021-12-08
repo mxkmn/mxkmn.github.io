@@ -1,4 +1,5 @@
 class Communications {
+    p_timeout = null;
     async p_postData(url = '', data = {}) {
         // Default options are marked with *
         const response = await fetch(url, {
@@ -18,24 +19,16 @@ class Communications {
     }
 	getQr() {
         const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
-        
-        const logging = false; // вывод скорости
 
         const successDiv = document.getElementById('success');
-        const sendDate = (new Date()).getTime();
-    
-        if (logging) {
-            successDiv.setAttribute("style", "display: none");
-        }
     
         this.p_postData(url, { token: user.getToken() })
             .then((data) => {
+                console.log(data);
+                clearTimeout(this.p_timeout);
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
-        
-                if (logging) {
-                    successDiv.textContent = 'QR-код успешно сгенерирован за ' + (receiveDate - sendDate) + ' миллисекунд!';
-                    successDiv.setAttribute("style", "display: block");
-                }
+                activate('qr_image');
+                this.p_timeout = setTimeout(update, (data["time"]-3)*1000);
             }
         );
     }

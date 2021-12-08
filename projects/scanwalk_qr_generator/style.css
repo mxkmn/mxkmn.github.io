@@ -9,13 +9,13 @@ html {
 	width: 70%;
 }
 
-.img-container, .logo, .button-container {
+.qr-container, .logo, .button-container {
 	max-width: 512px;
 	margin: 25px auto;
 	text-align: center;
 }
 
-.img {
+.qr_image {
 	width: 100%;
 }
 
