@@ -14,7 +14,11 @@ class Communications {
           redirect: 'follow', // manual, *follow, error
           referrerPolicy: 'no-referrer', // no-referrer, *client
           body: JSON.stringify(data) // body data type must match "Content-Type" header
-        });
+        }).catch((error) => {
+            clearTimeout(this.p_timeout);
+            activate('connection_error');
+            this.p_timeout = setTimeout(update, 10*1000);
+        })
         return await response.json(); // parses JSON response into native JavaScript objects
     }
 	getQr() {
@@ -29,8 +33,11 @@ class Communications {
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
                 activate('qr_image');
                 this.p_timeout = setTimeout(update, (data["time"]-3)*1000);
-            }
-        );
+            }).catch((error) => {
+                clearTimeout(this.p_timeout);
+                activate('timeout');
+                this.p_timeout = setTimeout(update, 5*1000);
+        });
     }
     getTokens() {
         const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
@@ -39,8 +46,7 @@ class Communications {
             .then((data) => {
                 user.setData(data["token"], data["tgtoken"]);
                 window.location.replace("generator.html");
-            }
-        );
+            });
     }
 }
 
