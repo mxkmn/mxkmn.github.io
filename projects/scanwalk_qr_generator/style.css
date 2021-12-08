@@ -76,17 +76,21 @@ html, body {
 .error.active {
 	display: block;
 } */
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:regular,700'); */
+
 html {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 }
-body {
-	
+
+.logo {
+	width: 70%;
 }
 
 .img-container, .logo, .button-container {
 	max-width: 512px;
-	margin: 0 auto;
+	margin: 25px auto;
 	text-align: center;
 }
 
@@ -102,6 +106,12 @@ body {
 	filter: invert(100%);
 	color: white;
 }
+/* 
+@media (max-aspect-ratio: 1/1) {
+	.logo {
+		margin: 0 25%;
+	}
+} */
 
 /* 
 .button-container {
