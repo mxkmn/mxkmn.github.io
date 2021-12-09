@@ -35,7 +35,7 @@ class User {
 		}
 	}
 	tgLogin() {
-		window.open('https://t.me/HSEPassBot?start=' + this.p_tgKey + '_blank');
+		window.open('https://t.me/ScanWalkBot?start=' + this.p_tgKey + '_blank');
 	}
 	deauth() {
 		this.setData("", "");
