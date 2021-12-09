@@ -34,6 +34,7 @@ class Communications {
                 activate('qr_image');
                 this.p_timeout = setTimeout(update, (data["time"]-3)*1000);
             }).catch((error) => {
+                
                 clearTimeout(this.p_timeout);
                 activate('timeout');
                 this.p_timeout = setTimeout(update, 5*1000);
