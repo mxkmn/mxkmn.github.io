@@ -22,7 +22,7 @@ class Communications {
         return await response.json(); // parses JSON response into native JavaScript objects
     }
 	getQr() {
-        const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
+        const url = "https://scanwalk2.herokuapp.com/api/v1/qrecords/generate";
 
         const successDiv = document.getElementById('success');
     
@@ -41,7 +41,7 @@ class Communications {
         });
     }
     getTokens() {
-        const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
+        const url = "https://scanwalk2.herokuapp.com/api/v1/auth/token";
 
         this.p_postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
