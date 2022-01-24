@@ -22,10 +22,10 @@ class Communications {
         return await response.json(); // parses JSON response into native JavaScript objects
     }
 	getQr() {
-        const url = "https://scanwalk2.herokuapp.com/api/v1/qrecords/generate";
+        const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
 
         const successDiv = document.getElementById('success');
-    
+
         this.p_postData(url, { token: user.getToken() })
             .then((data) => {
                 console.log(data);
@@ -34,14 +34,14 @@ class Communications {
                 activate('qr_image');
                 this.p_timeout = setTimeout(update, (data["time"]-3)*1000);
             }).catch((error) => {
-                
+
                 clearTimeout(this.p_timeout);
                 activate('timeout');
                 this.p_timeout = setTimeout(update, 5*1000);
         });
     }
     getTokens() {
-        const url = "https://scanwalk2.herokuapp.com/api/v1/auth/token";
+        const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
 
         this.p_postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {
