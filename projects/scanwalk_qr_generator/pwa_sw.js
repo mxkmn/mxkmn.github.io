@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('scanwalk-store').then((cache) => cache.addAll([
-      'resources/pwa/icons/maskable_icon_x72.png',
+      'resources/website_icon.png',
       'style.css',
 
       'generator.html',
