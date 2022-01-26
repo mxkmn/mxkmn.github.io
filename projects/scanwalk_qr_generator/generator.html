@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Пропуск</title> <!-- установка названия сайта -->
-	<link rel="shortcut icon" href="website_icon.png" type="image/png"> <!-- установка иконки сайта -->
+	<link rel="shortcut icon" href="resources/website_icon.png" type="image/png"> <!-- установка иконки сайта -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- адаптация к экранам разного размера и плотности -->
 	<link rel="stylesheet" href="style.css"> <!-- применение стилей -->
 
@@ -14,36 +14,39 @@
 	<script src="communications.js" defer></script>
 	<script src="generator.js" defer></script>
 
+	<!-- Google PWA -->
+	<link rel="manifest" href="pwa.webmanifest">
+
 	<!-- Apple PWA -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="Scanwalk">
 	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
 
 	<!-- Apple PWA icons -->
-	<link rel="apple-touch-icon" href="maskable_icon_x152.png"> <!-- iphone old -->
-	<link rel="apple-touch-icon" sizes="180x180" href="maskable_icon_x180.png"> <!-- iphone -->
-	<link rel="apple-touch-icon" sizes="152x152" href="maskable_icon_x152.png"> <!-- ipad and ipad mini -->
-	<link rel="apple-touch-icon" sizes="167x167" href="maskable_icon_x167.png"> <!-- ipad pro -->
+	<link rel="apple-touch-icon" href="resources/pwa/icons/maskable_icon_x152.png"> <!-- iphone old -->
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/pwa/icons/maskable_icon_x180.png"> <!-- iphone -->
+	<link rel="apple-touch-icon" sizes="152x152" href="resources/pwa/icons/maskable_icon_x152.png"> <!-- ipad and ipad mini -->
+	<link rel="apple-touch-icon" sizes="167x167" href="resources/pwa/icons/maskable_icon_x167.png"> <!-- ipad pro -->
 
 	<!-- Apple PWA splashscreens (https://iosref.com/res) -->
-	<link rel="apple-touch-startup-image" href="640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- iPod Touch 6..7, 5..SE1 -->
-	<link rel="apple-touch-startup-image" href="750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- 6..8/SE2 -->
-	<link rel="apple-touch-startup-image" href="1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 6+..8+ -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- iPod Touch 6..7, 5..SE1 -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- 6..8/SE2 -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 6+..8+ -->
 
-	<link rel="apple-touch-startup-image" href="1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- X..11 Pro -->
-	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="828x1792.png"> <!-- XR..11 -->
-	<link rel="apple-touch-startup-image" href="1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- XS Max..11 Pro Max -->
-	<link rel="apple-touch-startup-image" href="1080x2340.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12 Mini..13 Mini -->
-	<link rel="apple-touch-startup-image" href="1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12/12 Pro..13/13 Pro -->
-	<link rel="apple-touch-startup-image" href="1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12 Pro Max..13 Pro Max -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- X..11 Pro -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- XR..11 -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- XS Max..11 Pro Max -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1080x2340.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12 Mini..13 Mini -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12/12 Pro..13/13 Pro -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"> <!-- 12 Pro Max..13 Pro Max -->
 
-	<link rel="apple-touch-startup-image" href="2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- всякоразные айпады, тут самый большой -->
+	<link rel="apple-touch-startup-image" href="resources/pwa/apple_splashscreens/2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> <!-- всякоразные айпады, тут самый большой -->
 </head>
 
 <body class="colorizable">
 	<div class="logo-container">
 		<svg version="1.1" id="svg_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 270" style="enable-background:new 0 0 1600 270;" xml:space="preserve"><style type="text/css">.st0{fill:#252C6E;}.st1{fill:#4F8FE3;}.st2{fill:#569FF6;}.st3{fill:#3A5DA8;}.st4{fill:#2C3C81;}.st5{fill:#334D95;}.st6{fill:#487ECF;}.st7{fill:#416EBC;}</style><g transform="translate(0.000000,270.000000) scale(0.100000,-0.100000)"><path class="st0" d="M805,2676c-130-21-233-54-344-107c-87-43-117-64-187-133c-65-64-91-99-119-157c-88-185-86-392,4-574c70-140,186-248,356-330c122-60,233-90,442-120c97-15,210-37,252-50c156-50,274-147,335-275c29-60,31-73,31-170c0-93-3-111-27-163c-37-78-116-154-209-199c-105-52-176-68-319-75c-169-7-285,16-425,86c-122,61-188,117-239,205c-46,78-83,110-148,127C124,764,32,717,8,639c-10-35-9-46,12-97C130,271,435,69,808,19c132-18,354-6,477,25c198,49,312,111,436,235c69,69,94,102,127,171c56,115,77,222,69,360c-12,206-67,333-206,470c-159,157-350,231-696,271c-294,33-471,123-547,277c-30,61-33,74-33,162c0,84,3,102,28,152c70,143,238,224,487,235c265,12,447-66,582-247c85-116,91-122,124-136c48-20,123-18,161,6c91,55,91,155-1,285c-141,197-312,321-521,376C1193,2688,927,2696,805,2676z"/><path class="st1" d="M13581,2641c-18-10-44-35-57-57l-24-39v-987c0-1081-1-1066,60-1210c55-133,152-230,278-279c44-17,79-22,157-23c89-1,105,2,145,24c82,46,112,129,76,213c-27,64-56,80-159,87c-124,8-154,27-199,125l-23,50l-5,1007c-5,1002-5,1007-26,1035C13751,2658,13657,2681,13581,2641z"/><path class="st2" d="M14660,2642c-19-9-45-32-57-51l-23-34V1351c0-1178,1-1207,20-1238c26-43,58-63,117-70c71-8,135,21,162,76c20,38,21,57,21,320v279l82,71c45,39,87,70,92,68c6-2,156-183,333-403c178-219,335-407,350-416c69-44,188-4,224,75c22,50,24,77,5,121c-8,18-163,216-346,441c-274,336-330,409-319,419c8,7,154,137,325,289s316,288,322,302c30,66,3,145-67,192c-42,28-104,30-146,4c-16-10-214-183-440-385l-410-366l-5,717l-5,718l-22,31C14829,2657,14732,2678,14660,2642z"/><path class="st3" d="M7443,1911c-73-12-188-48-248-78c-207-105-378-310-447-535c-22-71-22-88-26-606l-3-533l23-40c31-56,75-80,143-80c71,0,120,28,146,85c17,38,19,75,19,521c0,522,1,537,58,653c36,76,158,198,235,235c64,31,169,57,232,57c62,0,174-27,235-57c33-16,85-56,131-102c85-85,130-166,148-265c7-37,11-235,11-528c0-371,3-475,14-501c18-44,78-95,122-103c78-14,176,47,189,119c4,18,5,266,3,552c-4,506-5,522-27,595c-29,97-98,226-164,307c-104,130-287,247-447,288C7715,1914,7519,1923,7443,1911z"/><path class="st4" d="M3098,1879c-262-38-481-175-619-386c-189-289-198-728-21-1028c63-108,200-245,308-307c93-54,227-102,334-119c119-18,316-6,425,26c148,43,308,142,356,218c37,59,12,135-61,185c-58,39-126,26-222-45c-85-62-164-85-308-91c-204-7-330,38-455,163s-175,258-175,465c0,208,51,343,176,468c120,120,262,171,443,159c141-10,243-54,348-151c73-67,91-76,150-76s112,33,137,83c33,72,13,119-92,218C3629,1842,3371,1919,3098,1879z"/><path class="st5" d="M5106,1875c-334-64-615-308-716-623c-113-351-22-715,242-968c188-181,410-262,683-251c198,8,367,66,513,177c29,22,55,40,57,40c3,0,5-26,5-57c0-40,6-68,20-91c58-95,202-97,266-3l24,36v468c0,388-3,481-16,545c-36,174-118,326-248,457s-271,214-434,256C5398,1888,5211,1894,5106,1875z M5424,1550c126-32,231-101,323-211c93-112,133-227,134-380c0-182-48-297-180-429c-130-131-247-180-429-180c-179,0-303,50-428,175c-134,134-192,284-180,472c10,168,66,284,195,405C5018,1552,5215,1604,5424,1550z"/><path class="st6" d="M11977,1880c-252-40-487-192-636-413c-188-277-200-672-30-974c64-113,234-282,349-346c159-88,310-123,505-114c192,8,361,66,501,170l61,45l6-61c3-36,13-70,25-86c71-97,209-95,267,4l25,42v449c0,257-5,477-10,514c-30,188-121,362-266,505c-127,126-267,206-427,246C12253,1884,12065,1894,11977,1880z M12259,1555c115-28,187-70,287-169c99-99,141-170,170-286c23-92,15-263-16-345c-52-137-181-283-302-343c-90-44-172-62-280-62c-181,0-299,49-428,179c-138,139-187,268-177,466c8,140,43,234,129,342c43,55,136,133,198,167C11951,1565,12127,1586,12259,1555z"/><path class="st7" d="M8751,1866c-55-14-79-45-87-112c-6-47,12-106,251-825c142-426,264-789,272-806c49-107,238-103,292,6c10,20,94,305,187,634c93,328,171,597,174,597s79-275,170-612c97-361,173-625,185-642c30-44,99-71,161-61c37,5,57,15,85,43c34,35,52,84,297,822c158,473,262,800,262,823c0,90-50,139-142,139c-58-1-108-28-136-75c-11-18-104-297-208-622c-103-324-190-593-193-597c-4-4-76,261-160,590c-89,347-161,611-173,630c-56,91-189,103-260,24c-30-34-49-89-208-629c-96-326-178-593-181-593s-68,195-144,432c-223,697-232,723-259,766C8895,1863,8830,1887,8751,1866z"/></g></svg> <!-- Scanwalk logo -->
-		<div class="version">beta 14 (google pwa disabled)</div>
+		<div class="version">beta 15</div>
 	</div>
 	<div class="qr-container">
 		<img id="qr_image" style="display: none;" onclick="communications.getQr();">

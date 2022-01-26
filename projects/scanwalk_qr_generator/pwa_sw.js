@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('scanwalk-store').then((cache) => cache.addAll([
-      'maskable_icon_x72.png',
+      'resources/pwa/icons/maskable_icon_x72.png',
       'style.css',
 
       'generator.html',
@@ -9,7 +9,9 @@ self.addEventListener('install', (e) => {
 
       'communications.js',
       'theme.js',
-      'user.js'
+      'user.js',
+
+      'index.html'
     ])),
   );
 });

@@ -36,7 +36,7 @@ class Communications {
                 clearTimeout(this.p_timeout);
                 activate('timeout');
                 this.p_timeout = setTimeout(update, 5*1000);
-        });
+            });
     }
     getTokens() {
         const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
