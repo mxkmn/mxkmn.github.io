@@ -28,13 +28,11 @@ class Communications {
 
         this.p_postData(url, { token: user.getToken() })
             .then((data) => {
-                console.log(data);
                 clearTimeout(this.p_timeout);
                 document.getElementById('qr_image').setAttribute("src", "data:image/png;base64," + data["image"]);
                 activate('qr_image');
                 this.p_timeout = setTimeout(update, (data["time"]-3)*1000);
             }).catch((error) => {
-
                 clearTimeout(this.p_timeout);
                 activate('timeout');
                 this.p_timeout = setTimeout(update, 5*1000);
@@ -47,7 +45,8 @@ class Communications {
             .then((data) => {
                 user.setData(data["token"], data["tgtoken"]);
                 window.location.replace("generator.html");
-            });
+            }
+        );
     }
 }
 
