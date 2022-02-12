@@ -18,6 +18,10 @@ p {
 	text-align: left;
 }
 
+img {
+	cursor: pointer;
+}
+
 #qr_image {
 	width: 100%;
 }
