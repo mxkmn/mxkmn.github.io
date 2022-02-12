@@ -121,7 +121,7 @@ function hiddenGemSetup(data) {
         editableDiv.appendChild(getElement(jsonElement));
       });
     } else {
-      console.log(key + " wasn't found in HTML!");
+      console.log(divId + " wasn't found in HTML!");
     }
   }
 }
