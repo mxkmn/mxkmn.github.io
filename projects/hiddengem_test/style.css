@@ -21,8 +21,8 @@ img {
   display: none;
 }
 
-.text { /* текстовые блоки */
-  margin-top: 20px;
+.text p { /* текстовые блоки */
+  margin-top: 16px;
   margin-bottom: 8px;
   text-align: left;
 }
@@ -31,6 +31,7 @@ figcaption p { /* подписи к картинкам */
   font-weight: 300;
 
   margin: 8px auto;
+  font-size: 80%;
   color: #666;
 }
 
