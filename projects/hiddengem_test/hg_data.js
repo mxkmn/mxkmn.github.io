@@ -1,4 +1,10 @@
 hiddenGemSetup({
+  site_header: [
+    {
+      type: 'text', // тип: текстовое поле (менять не нужно)
+      text: `сайтец` // текст
+    },
+  ],
   content_place: [
     {
       type: "collapsible-box",
@@ -61,7 +67,6 @@ hiddenGemSetup({
             },
           ],
         },
-
         {
           type: "picture",
           source: "hiheha.jpg",
