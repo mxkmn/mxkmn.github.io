@@ -7,11 +7,89 @@
     <title>HiddenGem Test</title>
 
     <script src="hiddengem.js?v=2" defer></script>
-    <script src="hg_data.js?v=2" defer></script>
+    <script src="hg_data.js?v=3" defer></script>
 
     <link rel="stylesheet" href="style.css?v=3" />
+
+    <style>
+      #site_header {
+        position: fixed;
+        height: 60px;
+
+        background: black;
+
+        color: white;
+
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        transition: all .3s ease;
+        box-shadow: 0 1px 25px rgba(0,0,0, .1);
+      }
+      #site_header.hide {
+        top: -60px;
+      }
+    </style>
   </head>
   <body>
+    <div id="site_header"></div>
     <div id="content_place"></div>
+    <div id="site-footer"></div>
   </body>
+
+  <script>
+    (function(){
+
+    var doc = document.documentElement;
+    var w = window;
+
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+
+    var header = document.getElementById('site_header');
+
+    var checkScroll = function() {
+
+      /*
+      ** Find the direction of scroll
+      ** 0 - initial, 1 - up, 2 - down
+      */
+
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        //scrolled up
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        //scrolled down
+        direction = 1;
+      }
+
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+
+      prevScroll = curScroll;
+    };
+
+    var toggleHeader = function(direction, curScroll) {
+      if (direction === 2 && curScroll > 52) {
+
+        //replace 52 with the height of your header in px
+
+        header.classList.add('hide');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        header.classList.remove('hide');
+        prevDirection = direction;
+      }
+    };
+
+    window.addEventListener('scroll', checkScroll);
+
+    })();
+  </script>
 </html>
