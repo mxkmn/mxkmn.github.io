@@ -1,5 +1,6 @@
 class Communications {
     p_timeout = null;
+    p_baseUrl = "https://51.250.24.9/api/v1/";
     async p_postData(url = '', data = {}) {
         // Default options are marked with *
         const response = await fetch(url, {
@@ -22,7 +23,7 @@ class Communications {
         return await response.json(); // parses JSON response into native JavaScript objects
     }
 	getQr() {
-        const url = "https://scanwalk.herokuapp.com/api/v1/qrecords/generate";
+        const url = p_baseUrl + "qrecords/generate";
 
         const successDiv = document.getElementById('success');
 
@@ -39,7 +40,7 @@ class Communications {
             });
     }
     getTokens() {
-        const url = "https://scanwalk.herokuapp.com/api/v1/auth/token";
+        const url = p_baseUrl + "auth/token";
 
         this.p_postData(url, { id: Math.floor(Math.random()*5 + 100000) }) // (Math.random() * (999999 - 100000) + 100000)
             .then((data) => {

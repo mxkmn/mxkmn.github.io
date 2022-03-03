@@ -8,10 +8,28 @@ html { /* вся страница */
   font-weight: 300;
   font-size: 22px;
 
-  max-width: 800px;
   margin: 0px auto;
   text-align: center;
 }
+#site_header {
+  position: fixed;
+  height: 60px;
+  top: 0;
+
+  background: black;
+
+  color: white; /* текст */
+
+  width: 100%;
+  z-index: 100;
+  transition: all .3s ease;
+  /* box-shadow: 0 1px 25px rgba(0,0,0, .1); */
+}
+#site_header.hide {
+  top: -60px;
+}
+
+#si
 
 img {
   max-height:100%; max-width:100%;
