@@ -1,6 +1,6 @@
 class Communications {
     p_timeout = null;
-    p_baseUrl = "https://51.250.24.9/api/v1/";
+    p_baseUrl = "http://51.250.24.9/api/v1/";
     async p_postData(url = '', data = {}) {
         // Default options are marked with *
         const response = await fetch(url, {
