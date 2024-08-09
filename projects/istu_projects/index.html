@@ -1,0 +1,30 @@
+<html lang='ru'>
+  <head>
+    <meta charset="utf-8">
+    <title>Перенаправление</title>
+    <link rel="manifest" href="pwa.webmanifest">
+  </head>
+  <body>
+    <script>
+
+function storageAvailable(type) {
+	try {
+		var storage = window[type], x = '__storage_test__';
+		storage.setItem(x, x);
+		storage.removeItem(x);
+		return true;
+	}
+	catch(e) { return false; }
+}
+
+if (storageAvailable('localStorage')) { // если localStorage работает в этом браузере
+	if (localStorage.getItem('lastPage')) // если данные существуют
+		document.location.href = localStorage.getItem('lastPage');
+	else // если данные не существуют
+		document.location.href = "projects.html";
+} // если localStorage не работает в этом браузере
+else document.location.href = "projects.html";
+
+	</script>
+  </body>
+</html>

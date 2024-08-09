@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,300&display=swap'); /* 3 */
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap'); /* 4 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap'); /* 2 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html { /* вся страница */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+
+  margin: 0px auto;
+  text-align: center;
+}
+#site_header {
+  position: fixed;
+  height: 60px;
+  top: 0;
+
+  background: black;
+
+  color: white; /* текст */
+
+  width: 100%;
+  z-index: 100;
+  transition: all .3s ease;
+  /* box-shadow: 0 1px 25px rgba(0,0,0, .1); */
+}
+#site_header.hide {
+  top: -60px;
+}
+
+#si
+
+img {
+  max-height:100%; max-width:100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.text p { /* текстовые блоки */
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+figcaption p { /* подписи к картинкам */
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+
+  margin: 8px auto;
+  font-size: 80%;
+  color: #666;
+}
+
+.collapsible-block-button { /* кнопка сворачиваемого блока */
+  background-color: #b00000;
+  color: white;
+  cursor: pointer; /* курсор клика */
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+
+  transition: 0.2s linear;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.active { /* при активном состоянии */
+  background-color: #ff4800;
+}
+.collapsible-block-button:hover { /* при наведении мыши на кнопку */
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.content { /* внутренности сворачиваемого поля */
+  padding: 8px 18px;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f17e;
+}

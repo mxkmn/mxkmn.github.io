@@ -1,0 +1,136 @@
+<html lang='ru'>
+  <head>
+    <meta charset="utf-8">
+    <title>Проекты</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="pwa.webmanifest">
+    <script src="default.js" defer></script>
+    <script src="add_project.js" defer></script>
+  </head>
+  <body>
+    <div id="left_columns">
+      <nav id='navbar'>
+        <header>
+          <img sizes="50px" src="logo.png">
+          <p>PolySpace</p>
+          <div class="links_burger" onclick="changeBurger(this, '.links')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </header>
+        <div class="links">
+          <p class="link"><a href="projects.html">Выбор проектов</a></p>
+          <!-- <p class="link"><a href="add_project.html">Новый проект</a></p> -->
+          <p>‏</p>
+          <p class="link"><a href="projects.html">Новости</a></p>
+          <p class="link"><a href="projects.html">Информация от преподавателей</a></p>
+          <p class="link"><a href="projects.html">Расписание</a></p>
+          <p>‏</p>
+          <p class="link"><a href="#" onclick="changeTheme()">Сменить тему</a></p>
+        </div>
+        <div id="themeChanger"></div>
+      </nav>
+      <div id="aside_left_user">
+        <div class="user_header">
+          <h4>Профиль</h4>
+          <div class="user_burger" onclick="changeBurger(this, '.user')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="user">
+          <p class="userInfo">Вы не авторизированы</p>
+          <p class="link"><a class="loginLink" href="login.html">Войти</a></p>
+        </div>
+      </div>
+      <div id="aside_left">
+        <div class="schedule_header">
+          <h4>Расписание</h4>
+          <div class="schedule_burger" onclick="changeBurger(this, '.schedule')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="schedule">
+          <p>Данные не были получены</p>
+        </div>
+      </div>
+    </div>
+    <div id="right_columns">
+      <div id="aside_right_user">
+        <div class="user_header">
+          <h4>Профиль</h4>
+          <div class="user_burger" onclick="changeBurger(this, '.user')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="user">
+          <p class="userInfo">Вы не авторизированы</p>
+          <p class="link"><a class="loginLink" href="login.html">Войти</a></p>
+        </div>
+      </div>
+      <div id="aside_right">
+        <div class="schedule_header">
+          <h4>Расписание</h4>
+          <div class="schedule_burger" onclick="changeBurger(this, '.schedule')">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="schedule">
+          <p>Данные не были получены</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Создание нового проекта</h1>
+      <div class="first_cont">
+        <form action='/main/projects/' id="newProject">
+          <input type="hidden" name="sendingDataType" value="newProject">
+
+
+          <div class="formFields">
+            <div class="formField"><label>Название</label><br>
+            <input name='name' required placeholder='Необходимо ввести'></div>
+
+            <div class="formField"><label>Описание</label><br>
+            <input name='description'></div>
+    
+            <div class="formField"><label>Категория</label><br>
+            <select name='category'>
+              <option selected value='IT'>IT</option>
+              <option value='projecting'>Проектирование</option>
+              <option value='journalism'>Журналистика</option>
+            </select></div>
+
+            <div class="formField"><label>Статус</label><br>
+            <select name='status'>
+              <option selected value='inactive'>Не начат</option>
+              <option value='active'>В процессе</option>
+              <option value='complete'>Завершён</option>
+            </select></div>
+
+            <div class="formField"><label>Научный руководитель</label><br>
+            <input name='manager'></div>
+
+            <div class="formField"><label>Участники</label><br>
+            <input name='members' placeholder='Перечисл. через запятую'></div>
+
+            <div class="formField"><label>Ссылка на чат</label><br>
+            <input name='chat_link'></div>
+
+            <div class="formField"><input type='submit' value='Найти'></div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

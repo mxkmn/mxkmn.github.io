@@ -1,0 +1,244 @@
+/* #darkening {
+	background: rgba(102, 102, 102, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+#popup {
+	background: #fff;
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border: 3px solid #0000cc;
+	border-radius: 10px;
+	padding: 15px;
+	
+	font-size: 3vh;
+	text-align: center;
+	color: #0000cc;
+}
+input, button {
+	height: 3vh;
+	min-height: 30px;
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Merriweather+Sans:wght@300&display=swap');
+
+
+
+body {
+	margin: 0 auto; /* Выравниваем по центру */
+	font-family: 'IBM Plex Sans', sans-serif;
+	background: #D7E1F2; /* Цвет фона */
+}
+:root {
+	--mainColor: #ff9800;
+}
+::selection {
+    background: #ff9800; /* Цвет выделения */
+}
+
+
+
+#left_columns, #right_columns {
+	margin: 0 20px;
+	float: left;
+	width: 340px;
+}
+#right_columns { float: right; }
+
+
+
+nav, #aside_left, #aside_right, #aside_left_user, #aside_right_user {
+	margin-bottom: 20px;
+
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	padding: 15px;
+	border-radius: 20px;
+	background: #dde7f7;
+}
+main {
+	margin: 20px 25%; /* Ширина колонок */
+	hyphens: auto; /* Перенос слов через дефис (не работает в Chromium) */
+}
+
+.cont, .first_cont {
+	margin: 0 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	padding: 15px;
+	border-radius: 20px;
+	background: #cbe0ff;
+}
+.cont {
+	margin: 30px 20px 0 20px;
+	background: #dde7f7;
+}
+
+
+
+header, .schedule_header, .user_header {
+	display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+	margin-bottom: 20px;
+}
+header p {
+	font-weight: 300;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin: 0 10px;
+	font-size: 180%; /* Размер текста */
+}
+header img {
+	width: 40px;
+	height: auto;
+	margin: 0 5px;
+}
+
+
+
+footer {
+	padding-top: 20px;
+	font-style: italic;
+}
+h1 {
+	font-weight: bold;
+	margin: 0px 20px 15px 20px;
+}
+h4 {
+	font-weight: 300;
+	margin: 0 10px;
+	font-size: 180%; /* Размер текста */
+}
+
+
+
+.formFields {
+	/* vertical-align: middle; */
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.formField {
+	width: 40%;
+	margin: 10px 15px;
+}
+label, input, select {
+	font-size: 1.2em;
+	height: 1.3em;
+	margin: 10px 5px;
+	border-radius: 6px;
+}
+input, select {
+	width: 100%;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { /* убираем стрелочки у номера */
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+
+.link p {
+	margin: 20px 0 0 20px;
+}
+a {
+	font-size: 140%;
+
+	background: linear-gradient( to bottom,
+					var(--mainColor) 0%,
+					var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	color: #000;
+	text-decoration: none;
+	transition: background-size .2s;
+}
+a:hover {
+	background-size: 1px 1.2em;
+}
+
+
+
+@media (min-width: 1321px) {
+	#aside_left, #aside_left_user  { /* левый элемент */
+		display: none;
+	}
+}
+@media (max-width: 1500px) {
+	main {
+		margin: 20px 380px; /* Ширина колонок */
+	}
+}
+@media (max-width: 1320px) {
+	#aside_right, #aside_right_user {
+		display: none;
+	}
+	main {
+		margin-right: 20px;
+	}
+}
+
+@media (max-aspect-ratio: 1/1) {
+	#left_columns, #right_columns {
+		margin: 0 10px;
+		float: none;
+		width: auto;
+	}
+	nav {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	main {
+		margin: 10px 10px; /* Ширина колонок */
+		hyphens: auto; /* Перенос слов через дефис (не работает в Chromium) */
+	}
+}
+@media (max-width: 850px) {
+	#left_columns, #right_columns {
+		margin: 0 10px;
+		float: none;
+		width: auto;
+	}
+	nav {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	main {
+		margin: 10px 10px; /* Ширина колонок */
+		hyphens: auto; /* Перенос слов через дефис (не работает в Chromium) */
+	}
+}
+
+.schedule_burger, .links_burger {
+	margin-top: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .bar1 { /* Rotate first bar */
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 { /* Fade out the second bar */
+	opacity: 0;
+}
+.change .bar3 { /* Rotate last bar */
+	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
+}
