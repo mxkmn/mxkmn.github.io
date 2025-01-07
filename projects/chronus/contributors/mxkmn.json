@@ -1,0 +1,65 @@
+{
+	"photo": "https://sun9-73.userapi.com/impg/Ejscq12YiM3h6u7GQS_wZRqDjwAgLao1rxbCSA/H0tN5Vs8pYI.jpg?size=2560x1920&quality=96&sign=ecdf89f8515e64dfbc23f6d69443f90e&type=album", // url or base64
+	"ruName": "Максим Ярков",
+	"enName": "Maksim Yarkov",
+	"ruCards": [
+		{
+			"title": "Кто ты?",
+			"text": "Основные увлечения - попытки найти свою лучшую жизнь в путешествиях, людях и мире вокруг, а также разработка под Android и работа над собой.\n\nМожешь следить за мной в телеге - там мысли, иные увлечения, успехи и неудачи:",
+			"buttons": [
+				{
+					"text": "Блог компании mxkmn inc.",
+					"url": "https://t.me/mxkmn_inc"
+				}
+			]
+		},
+		{
+			"title": "Что ты наделал?",
+			"text": "Идея chronus, возникшая в 2022-ом году, была воплощена лишь в 2024-ом - и это мой первый проект на большую аудиторию. Пока только для Android, но если приложение соберёт достаточное количество пользователей, случится релиз и для iOS 😉.\n\nПоскольку это репутационный проект, хочется оставить его бесплатным, без рекламы и шлака. Буду рад поддержке - распространению chronus среди знакомых и нажатию на любую из кнопок ниже:",
+			"buttons": [
+				{
+					"text": "Оставить отзыв в Google Play",
+					"url": "https://play.google.com/store/apps/details?id=mxkmn.chronus"
+				},
+				{
+					"text": "Отблагодарить монетой",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				},
+				{
+					"text": "Добавление новых ВУЗов в chronus (перешли ссылку другу из другого ВУЗа)",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				}
+			]
+		}
+	],
+	"enCards": [
+		{
+			"title": "Who are you?",
+			"text": "Main hobbies are trying to find my best life in traveling, people and the world around me, plus Android development and working on myself.\n\n You can follow me on my blog - there are thoughts, other hobbies, successes and failures:",
+			"buttons": [
+				{
+					"text": "Blog of mxkmn inc.",
+					"url": "https://t.me/mxkmn_inc"
+				}
+			]
+		},
+		{
+			"title": "What did you do?",
+			"text": "The idea of chronus, which was born in 2022, was realized only in 2024 - and this is my first project for a large audience. At the moment it's only for Android, but if the app gathers enough users, it will be released for iOS 😉 .\n\nSince it's a reputation project, I want to keep it free, without ads and crap. I'd be glad for your support - distribute chronus among your friends and click on any of the buttons below:",
+			"buttons": [
+				{
+					"text": "Оставить отзыв в Google Play",
+					"url": "https://play.google.com/store/apps/details?id=mxkmn.chronus"
+				},
+				{
+					"text": "Отблагодарить монетой",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				},
+				{
+					"text": "Добавление новых ВУЗов в chronus (перешли ссылку другу из другого ВУЗа)",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				}
+			]
+		}
+	]
+}
