@@ -1,0 +1,28 @@
+{
+	"photo": "https://st.rolld.ru/i/thumbnails/pasha-tekhnik-2024.jpeg",
+    "test": 0,
+	"ruCards": [
+		{
+			"title": "How can I add an unsupported university?",
+			"text": "Если для твоего учебного заведения доступно расписание на сайте (не в виде PDF/Excel), то ты можешь добавить его поддержку в chronus. Я максимально упростил этот процесс, потребуется лишь пара вечеров и минимальные знания программирования.\n\nВзамен ты получишь рабочее расписание в календаре со всеми фичами chronus, а также подобную страничку в приложении, где сможешь рассказать о себе, пропиарить свои соцсети и проекты.",
+			"buttons": [
+				{
+					"text": "Добавление новых ВУЗов в chronus",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				}
+			]
+		}
+	],
+	"enCards": [
+		{
+			"title": "How can I add an unsupported university?",
+			"text": "If your university schedule is available on the website (not as PDF/Excel), you can add its support to chronus. I've simplified the process as much as possible, it will only take a couple of evenings and minimal programming knowledge.\n\nYou will get your schedule in a calendar with all chronus features, as well as a similar page in the app, where you can tell about yourself, promote your social networks and projects.",
+			"buttons": [
+				{
+					"text": "Adding new universities to chronus",
+					"url": "https://youtu.be/dQw4w9WgXcQ"
+				}
+			]
+		}
+	]
+}
