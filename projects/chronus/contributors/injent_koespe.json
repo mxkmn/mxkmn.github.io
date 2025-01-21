@@ -1,0 +1,41 @@
+{
+	"ru": {
+		"name": "Веревкин Елисей и Пудов Кирилл",
+		"cards": [
+			{
+				"title": "Мы создаём БГИТУ Компас",
+				"text": "Мы разработали приложение для Android и телеграм-бота, чтобы ты следил за расписание с максимальным комфортом. Будем рады, если ознакомишься и с нашим подходом к просмотру расписания:",
+				"buttons": [
+					{
+						"text": "Сайт проекта",
+						"url": "https://bgitu-compass.ru"
+					},
+					{
+						"text": "Проблема с расписанием? Напиши, поправим 🙂",
+						"url": "https://t.me/Injent"
+					}
+				]
+			}
+		]
+	},
+	"en": {
+		"name": "Verevkin Elisey and Pudov Kirill",
+		"cards": [
+			{
+				"title": "We are creating BGITU Compass",
+				"text": "If your university schedule is available on the website (not as PDF/Excel), you can add its support to chronus. I've simplified the process as much as possible, it will only take a couple of evenings and minimal programming knowledge.\n\nYou will get your schedule in a calendar with all chronus features, as well as a similar page in the app, where you can tell about yourself, promote your social networks and projects.",
+				"buttons": [
+					{
+						"text": "Project website",
+						"url": "https://bgitu-compass.ru"
+					},
+					{
+						"text": "Problem with the schedule? Write us, we'll fix it 🙂",
+						"url": "https://t.me/Injent"
+					}
+				]
+			}
+		]
+	},
+	"photo": ""
+}
