@@ -28,23 +28,15 @@
 		function DetectAndRedirect() {
 			if (getMobileOS() == "Android") {
 				window.location.href = "https://play.google.com/store/apps/details?id=mxkmn.chronus";
+			} else if (getMobileOS() == "iOS") {
+				window.location.href = "https://gist.github.com/mxkmn/489b2d5d4c3db8fce0676ed650cc1f6c";
 			} else {
 				window.location.href = "https://t.me/chronusapp";
 			}
-			// if (getMobileOS() == "iOS") {
-			// 	window.location.href = "https://apps.apple.com/US/app/idOfYourAPP";
-			// }
-			// if (getMobileOS() == "Windows Phone") {
-			// 	window.location.href = "https://www.microsoft.com/en-us/p/NameOfYourAPP";
-			// }
-			// if (!getMobileOS()) {
-			// 	document.getElementById('not-mobile').innerHTML = "if not mobile show page with all links to store";
-			// }
 		};
 	</script>
 </head>
 
-<body onload="DetectAndRedirect()">
-</body>
+<body onload="DetectAndRedirect()"></body>
 
 </html>
