@@ -9,6 +9,10 @@
 					{
 						"text": "Добавление новых ВУЗов в chronus",
 						"url": "https://github.com/mxkmn/ChronusParserTemplate"
+					},
+					{
+						"text": "О преимуществах chronus — статья на Хабре",
+						"url": "https://habr.com/ru/articles/888022"
 					}
 				]
 			}
@@ -24,6 +28,10 @@
 					{
 						"text": "Adding new universities to chronus",
 						"url": "https://github.com/mxkmn/ChronusParserTemplate"
+					},
+					{
+						"text": "About chronus benefits: Habr article",
+						"url": "https://habr.com/ru/articles/888022"
 					}
 				]
 			}
