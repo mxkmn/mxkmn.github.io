@@ -1,0 +1,43 @@
+{
+	"ru": {
+		"name": "Вячеслав",
+		"cards": [
+			{
+				"title": "Обо мне",
+				"text": "Пишу на C# всякую всячину, в последние пару лет осел на модах на Unity игры. В светлом будущем мечтаю наконец полностью пересесть на линукс, купить домик недалеко от Киото, завести мурзика. Работаю с девизом \"Идея > Фан > Денюшка\" и постоянно эти идеи ищу.\nСпамьте мне в личку в тг по делу и без (желательно в 3 ночи) - поболтаем. И ищу я не только идеи, но и мангу напочитать",
+				"buttons": [
+					{
+						"text": "тг",
+						"url": "https://t.me/NotWakeUp"
+					}
+				]
+			},
+			{
+				"title": "Музычка",
+				"text": "Думаю по плейлисту не сложно понять в каком настоении я обычно прибываю)",
+				"buttons": [
+					{
+						"text": "YandexМузыка",
+						"url": "https://music.yandex.ru/users/slava.shilin07/playlists/3"
+					}
+				]
+			}
+		]
+	},
+	"en": {
+		"name": "Vyacheslav",
+		"cards": [
+			{
+				"title": "About me",
+				"text": "I write all sorts of stuff in C#, and in the past couple of years, I've settled on modding Unity games. In a bright future, I dream of finally switching completely to Linux, buying a small house near Kyoto, and getting a cat. I work with the motto \"Idea > Fun > Money\" and am constantly looking for these ideas. \nFeel free to spam me in private messages on Telegram, whether it's for a reason or not —let's chat. I'm always looking not only for ideas but also for manga to read.",
+				"buttons": [
+					{
+						"text": "Telegram",
+						"url": "https://t.me/NotWakeUp"
+					}
+				]
+			}
+		]
+	},
+	"photo": "https://i.imgur.com/1BMWHNh.jpeg"
+}
