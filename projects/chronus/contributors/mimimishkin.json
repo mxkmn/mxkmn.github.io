@@ -1,0 +1,21 @@
+{
+	"ru": {
+		"name": "Мимимишка",
+		"cards": [
+			{
+				"title": "Обо мне",
+				"text": "Пью молоко и читаю статьи на Хабре"
+			}
+		]
+	},
+	"en": {
+		"name": "Mimimishka",
+		"cards": [
+			{
+				"title": "About me",
+				"text": "Drinking milk and reading stuff on Habr"
+			}
+		]
+	},
+	"photo": "https://avatars.githubusercontent.com/u/68619081"
+}
