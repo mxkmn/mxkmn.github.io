@@ -1,5 +1,6 @@
 {
 	"ru": {
+		"name": "Максим Ярков",
 		"cards": [
 			{
 				"title": "Обо мне",
@@ -32,6 +33,7 @@
 		]
 	},
 	"en": {
+		"name": "Maksim Yarkov",
 		"cards": [
 			{
 				"title": "About me",
