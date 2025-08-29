@@ -4,7 +4,7 @@
 		"cards": [
 			{
 				"title": "Обо мне",
-				"text": "Разрабатываю под Android и ищу свою лучшую жизнь в путешествиях, людях, личных проектах и мире вокруг.\n\nМожешь следить за мной в телеге. Не до конца понимаю, что там происходит, темы всегда разные, но моим чювакам нравится:",
+				"text": "Разрабатываю под Android и ищу свою лучшую жизнь в путешествиях, людях, личных проектах и мире вокруг.\n\nМожешь следить за мной в телеге — там много лонгридов для думающих, открытых миру людей.",
 				"buttons": [
 					{
 						"text": "Блог компании mxkmn inc.",
@@ -13,8 +13,12 @@
 				]
 			},
 			{
-				"title": "Пара слов о chronus",
-				"text": "В 2024-ом году идея расписания в календаре, появившаяся у меня ещё в 2022-ом, всё же воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, мне хочется оставить его бесплатным, без рекламы и прочих радостей коммерческих приложений.\n\nК сожалению, самой большой сложностью является распространение, поэтому буду рад поддержке — поделись информацией о chronus с друзьями или одногруппниками, и нажми на любую из кнопок ниже:",
+				"title": "Зачем сделал chronus?",
+				"text": "Мне было грустно, что для студентов не существовало приложений, которые бы относились к ним с уважением. Я захотел проверить, насколько реально выпустить продукт в этой сфере, который будет нравиться самой придирчивой, умной, близкой по мыслям аудитории.\n\nИдея простая: вам нужно приложение, которое делает только то, что действительно требуется студенту; мне хочется распространить что-нибудь классное и получить лояльность среди тех, кто себя уважает. Это история про личную реализацию и про взаимную пользу.\n\nВ 2024-ом году идея расписания в календаре, появившаяся у меня ещё в 2022-ом, всё же воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, и мне хочется оставить его бесплатным, без рекламы, продажи данных и прочих радостей коммерческих приложений."
+			},
+			{
+				"title": "Поддержка — самое важное",
+				"text": "Самой большой сложностью является распространение, поэтому буду рад, если ты расскажешь о chronus друзьям и одногруппникам и нажмёшь на любую из кнопок ниже:",
 				"buttons": [
 					{
 						"text": "Оставить отзыв в Google Play",
@@ -37,7 +41,7 @@
 		"cards": [
 			{
 				"title": "About me",
-				"text": "I'm developing for Android and looking for my best life in travel, people, personal projects and the world around me.\n\nYou can follow me on Telegram. I don't fully understand what's going on there, the topics are always different, but my dudes love it:",
+				"text": "I'm developing for Android and looking for my best life in travel, people, personal projects and the world around me.\n\nYou can follow me on Telegram - there's a lot of longreads for thinking, open-minded people",
 				"buttons": [
 					{
 						"text": "My Telegram blog (RU only)",
@@ -46,8 +50,12 @@
 				]
 			},
 			{
-				"title": "About chronus",
-				"text": "In 2024, the idea of a schedule in the calendar, which I've had since 2022, finally came to life in a finished app. This is my first project for a large audience, and I want to keep it free, without ads and other commercial trash.\n\nUnfortunately, the biggest challenge is distribution, so I'd be happy to have your support - share chronus with your friends or classmates and click on any of the buttons below:",
+				"title": "Why did I make this app?",
+				"text": "I was sad that there were no apps for students that would treat them with respect. I wanted to see if it was feasible to release a product in this industry that would appeal to the most picky, intelligent, congenial audience.\n\nThe idea is simple: you need an app that does only what a student really needs; I want to spread something cool and gain loyalty among those who respect themselves. It's a story about personal fulfillment and mutual benefit.\n\nIn 2024, the idea of a schedule on a calendar that I had back in 2022 finally came to reality. This is my first project for a large audience, and I want to keep it free, without ads, selling data and other pleasures of commercial apps."
+			},
+			{
+				"title": "Support is the most important thing",
+				"text": "The biggest challenge is distribution, so I'd love it if you would tell your friends and classmates about chronus and click on any of the buttons below:",
 				"buttons": [
 					{
 						"text": "Leave a review on Google Play",
