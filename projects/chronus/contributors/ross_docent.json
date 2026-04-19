@@ -1,10 +1,10 @@
 {
 	"ru": {
-		"name": null,
+		"name": "Ланько Сергей",
 		"cards": [
 			{
 				"title": "Обо мне",
-				"text": "К.т.н, доцент в вузе\n3D-печатаю и конструирую детали\nКонсультации по изысканиям, геотехнике",
+				"text": "Кандидат технических наук, доцент в вузе\n3D-печатаю и конструирую детали\nКонсультации по изысканиям, геотехнике",
 				"buttons": [
 					{
 						"text": "Telegram",
@@ -16,7 +16,18 @@
 	},
 	"en": {
 		"name": null,
-		"cards": []
+		"cards": [
+			{
+				"title": "About me",
+				"text": "Candidate of Technical Sciences, Associate Professor\n3D printing and part design\nConsulting on surveying and geotechnical engineering",
+				"buttons": [
+					{
+						"text": "Telegram",
+						"url": "https://t.me/crazy_scientists"
+					}
+				]
+			}
+        ]
 	},
 	"photo": "https://sun111-2.userapi.com/s/v1/ig2/VLfnKNrLiG3Are6DVsn833_4UnEnX5QECwnJo81mc_hTqO3Ll79b0-8pv8NYs7L0-kQSuRUKadANDPqpVwO9lYn5.jpg?quality=95&crop=413,329,1032,1032&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&u=Dcsvq9TXlgRKGS5bX-s5AtOsyEM27pQ3GeMXQ8ROj68&cs=720x720"
 }
