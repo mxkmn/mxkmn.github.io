@@ -73,5 +73,6 @@
 			}
 		]
 	},
-	"photo": "https://sun9-23.userapi.com/s/v1/ig2/IUbIDgR0EBX_-NzaosqLJMjhgSWk2UB8WxDDLasfdEmazzwxKaRG1sE88gi1nn8kZqOHfxTD4JZCw6iurqZZFfnI.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1316x1316&from=bu&u=EMQJuMxoC8UnjmSSH61va72ieOA2PNDzfXpjCrWqs7I&cs=1316x0"
+	"photo": "https://sun9-23.userapi.com/s/v1/ig2/IUbIDgR0EBX_-NzaosqLJMjhgSWk2UB8WxDDLasfdEmazzwxKaRG1sE88gi1nn8kZqOHfxTD4JZCw6iurqZZFfnI.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1316x1316&from=bu&u=EMQJuMxoC8UnjmSSH61va72ieOA2PNDzfXpjCrWqs7I&cs=1316x0",
+	"photoTintAlpha": 0.25
 }
