@@ -3,22 +3,22 @@
 		"name": "Максим Ярков",
 		"cards": [
 			{
-				"title": "Чем занимаюсь?",
-				"text": "Да много чем, но публичных проекта лишь два: chronus и блог в телеге.\n\nЗаходи, если интересны мыслишки о жизни, путешествиях и айтишке 👇",
+				"title": "Чем занимаюсь помимо chronus?",
+				"text": "В данный момент увлечён прокачкой собственного стиля, фотографией, пишу текста, катаюсь на велике и не только, люблю людей и всякоразное искусство.\n\nАктивен только в телеграме, веду два канала: фотографии из жизни и блог с лонгридами.\n\nА по профессии я мобильный разработчик.",
 				"buttons": [
 					{
-						"text": "Блог компании mxkmn inc.",
-						"url": "https://t.me/mxkmn_inc"
+						"text": "Фоточки: события вокруг, прикольные люди, мои крейзи-образы",
+						"url": "https://t.me/mxkmn_photodump"
+					},
+					{
+						"text": "Мыслишки о жизни и (немного) об айтишке",
+						"url": "https://t.me/mxkmn_inc/148"
 					}
 				]
 			},
 			{
 				"title": "Зачем сделал chronus?",
-				"text": "Мне было грустно, что для студентов не существовало подобных приложений, которые бы относились к ним с уважением. Я захотел проверить, насколько реально выпустить продукт в этой сфере, который будет нравиться самой придирчивой, умной, близкой по мыслям аудитории.\n\nИдея простая: вам нужно приложение, которое делает только то, что действительно требуется студенту; мне хочется создать в своей жизни что-нибудь классное и полезное. Это история про личную реализацию и про взаимную пользу.\n\nВ 2024-ом году идея расписания в календаре, появившаяся у меня ещё в 2022-ом, всё же воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, и мне хочется оставить его бесплатным, без рекламы, продажи данных и прочих радостей коммерческих приложений."
-			},
-			{
-				"title": "Поддержка — самое важное",
-				"text": "Самой большой сложностью является распространение, поэтому буду рад, если ты расскажешь о chronus друзьям и одногруппникам и нажмёшь на любую из кнопок ниже:",
+				"text": "Мне было грустно, что для студентов не существовало подобных приложений, которые бы относились к ним с уважением. По крайней мере, для студентов моего ВУЗа.\n\nВ 2024-ом году идея расписания в календаре, появившаяся у меня ещё в 2022-ом, наконец воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, и мне хочется оставить его бесплатным, без рекламы, продажи данных и прочих радостей коммерческих приложений.\n\nСамой большой сложностью является распространение — буду рад, если ты расскажешь о chronus друзьям и одногруппникам и нажмёшь на любую из кнопок ниже:",
 				"buttons": [
 					{
 						"text": "Оставить отзыв в Google Play",
@@ -27,10 +27,6 @@
 					{
 						"text": "Отблагодарить монетой",
 						"url": "https://www.tbank.ru/cf/3z7cvB3q9YN"
-					},
-					{
-						"text": "Добавление новых ВУЗов в chronus (перешли другу-программисту из другого университета)",
-						"url": "https://habr.com/ru/articles/888022"
 					}
 				]
 			}
@@ -40,22 +36,22 @@
 		"name": "Maksim Yarkov",
 		"cards": [
 			{
-				"title": "What do I do?",
-				"text": "Well, lots of things, but I only have two public projects: chronus and my Telegram blog.\n\nCheck it out if you're interested in thoughts on life, travel, and IT 👇",
+				"title": "What do I do besides Chronus?",
+				"text": "Right now, I'm into perfecting my own style, photography, writing, biking, and I love people and various kinds of art.\n\nI'm only active on Telegram, where I have two channels: one for photos from my life and a blog with longreads.\n\nProfessionally, I'm a mobile developer.",
 				"buttons": [
 					{
-						"text": "My Telegram blog (RU only)",
-						"url": "https://t.me/mxkmn_inc"
+						"text": "Photos by me and with me",
+						"url": "https://t.me/mxkmn_photodump"
+					},
+					{
+						"text": "My blog (RU only) about life and (a little bit) about IT",
+						"url": "https://t.me/mxkmn_inc/148"
 					}
 				]
 			},
 			{
 				"title": "Why did I make this app?",
-				"text": "I was sad that there were no apps for students that would treat them with respect. I wanted to see if it was feasible to release a product in this industry that would appeal to the most picky, intelligent, congenial audience.\n\nThe idea is simple: you need an app that does only what a student really needs; I want to spread something cool and gain loyalty among those who respect themselves. It's a story about personal fulfillment and mutual benefit.\n\nIn 2024, the idea of a schedule on a calendar that I had back in 2022 finally came to reality. This is my first project for a large audience, and I want to keep it free, without ads, selling data and other pleasures of commercial apps."
-			},
-			{
-				"title": "Support is the most important thing",
-				"text": "The biggest challenge is distribution, so I'd love it if you would tell your friends and classmates about chronus and click on any of the buttons below:",
+				"text": "I was sad that there were no apps for students that would treat them with respect. Well, at least not for students at my university.\n\nIn 2024, the idea of a schedule on a calendar that I had back in 2022 finally became a reality. This is my first project for a large audience, and I want to keep it free, without ads, selling data and other pleasures of commercial apps.\n\nThe biggest challenge is distribution, so I'd love if you would tell your friends and classmates about chronus and click on any of the buttons below:",
 				"buttons": [
 					{
 						"text": "Leave a review on Google Play",
@@ -64,10 +60,6 @@
 					{
 						"text": "Thank me with a donation",
 						"url": "https://www.tbank.ru/cf/3z7cvB3q9YN"
-					},
-					{
-						"text": "Add a new university to chronus (share it with a friend from another university who likes to code)",
-						"url": "https://habr.com/ru/articles/888022"
 					}
 				]
 			}
