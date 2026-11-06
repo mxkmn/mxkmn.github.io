@@ -18,7 +18,7 @@
 			},
 			{
 				"title": "Зачем сделал chronus?",
-				"text": "Мне было грустно, что для студентов не существовало подобных приложений, которые бы относились к ним с уважением. По крайней мере, для студентов моего ВУЗа.\n\nВ 2024-ом году идея расписания в календаре, появившаяся у меня ещё в 2022-ом, наконец воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, и мне хочется оставить его бесплатным, без рекламы, продажи данных и прочих радостей коммерческих приложений.\n\nСамой большой сложностью является распространение — буду рад, если ты расскажешь о chronus друзьям и одногруппникам и нажмёшь на любую из кнопок ниже:",
+				"text": "Мне было грустно, что для студентов не существовало подобных приложений, которые бы относились к ним с уважением. По крайней мере, для студентов моего ВУЗа.\n\nВ 2024-м году идея расписания в календаре, появившаяся у меня ещё в 2022-м, наконец воплотилась в жизнь в виде законченного приложения. Это мой первый проект на большую аудиторию, и мне хочется оставить его бесплатным, без рекламы, продажи данных и прочих радостей коммерческих приложений.\n\nСамой большой сложностью является распространение — буду рад, если ты расскажешь о chronus друзьям и одногруппникам и нажмёшь на любую из кнопок ниже:",
 				"buttons": [
 					{
 						"text": "Оставить отзыв в Google Play",
@@ -36,8 +36,8 @@
 		"name": "Maksim Yarkov",
 		"cards": [
 			{
-				"title": "What do I do besides Chronus?",
-				"text": "Right now, I'm into perfecting my own style, photography, writing, biking, and I love people and various kinds of art.\n\nI'm only active on Telegram, where I have two channels: one for photos from my life and a blog with longreads.\n\nProfessionally, I'm a mobile developer.",
+				"title": "What do I do besides chronus?",
+				"text": "Right now, I'm into perfecting my own style, photography, writing, and biking. I love people and various kinds of art.\n\nI'm only active on Telegram, where I have two channels: one for photos from my life and a blog with longreads.\n\nProfessionally, I'm a mobile developer.",
 				"buttons": [
 					{
 						"text": "Photos by me and with me",
